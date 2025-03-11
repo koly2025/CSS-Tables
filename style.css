@@ -1,0 +1,78 @@
+/* Basic Table Styling */
+.table-basic {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between borders */
+    margin-bottom: 20px;
+}
+
+.table-basic th, .table-basic td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 12px; /* Padding inside cells */
+    text-align: left; /* Left-align text */
+}
+
+/* Header Row Styling */
+.table-basic th {
+    background-color: #f2f2f2; /* Light gray background for header */
+    font-weight: bold; /* Make header text bold */
+}
+
+/* Hover Effect */
+.table-basic tr:hover {
+    background-color: #f5f5f5; /* Change background on hover */
+}
+
+/* Alternating Row Colors */
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+/* Table with Borders */
+.table-bordered th, .table-bordered td {
+    border: 2px solid #000; /* Darker border for a table with defined borders */
+}
+
+/* Centered Table */
+.table-centered {
+    margin-left: auto;
+    margin-right: auto; /* Center the table */
+}
+
+/* Table with No Borders */
+.table-no-borders th, .table-no-borders td {
+    border: none; /* Remove borders */
+    padding: 10px;
+}
+
+/* Table with Hover and Highlighted Row */
+.table-hover tbody tr:hover {
+    background-color: #dcdcdc; /* Slightly darker gray for hover */
+}
+
+.table-hover tbody tr.active-row {
+    background-color: #a9d0f5; /* Highlight the active row */
+}
+
+/* Table with Fixed Header */
+.table-fixed-header {
+    display: block;
+    max-height: 300px; /* Set a max height */
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+.table-fixed-header th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2; /* Background color for fixed header */
+    z-index: 1;
+}
+
+/* Table with Custom Font */
+.table-custom-font {
+    font-family: 'Arial', sans-serif; /* Change font to Arial */
+    font-size: 14px; /* Set font size */
+}
